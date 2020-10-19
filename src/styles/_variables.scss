@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $archivoBlackFont: 'Archivo Black', sans-serif;
+$robotoFont: 'Roboto', sans-serif;
 $richBlack: #020402;
 
 @mixin generalDisplay() {
@@ -17,4 +19,10 @@ $richBlack: #020402;
   font-family: $archivoBlackFont;
   color :white;
   font-size: $fontSize;
+}
+
+@mixin textFont($fontSize) {
+  color :white;
+  font-size: $fontSize;
+  font-family: $robotoFont;
 }
