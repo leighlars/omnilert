@@ -2,4 +2,6 @@
 
 .results-section {
   @include rowDisplay();
+  flex-wrap: wrap;
+  width: 60vh;
 }
