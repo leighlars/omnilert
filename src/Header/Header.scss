@@ -5,6 +5,9 @@ header {
   align-items: center;
   padding: 1%;
   width: 100%;
+  .header-text  {
+    @include rowDisplay();
+  }
   h1 {
     @include headerFont(3.5em);
     margin: 7px;

@@ -2,7 +2,7 @@
 
 .search-form {
   @include rowDisplay();
-  justify-content: center;
+  margin-left: 32em;
   input {
     @include textFont(1.5em);
     color: $richBlack;
