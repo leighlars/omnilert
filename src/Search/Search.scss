@@ -3,12 +3,12 @@
 .search-form {
   @include rowDisplay();
   justify-content: center;
-  margin-right: 3em;
   input {
     @include textFont(1.5em);
     color: $richBlack;
     border: none;
     border-radius: 6px 0px 0px 6px;
+    padding: .5%;
     ::placeholder {
       color: $richBlack;
     }
