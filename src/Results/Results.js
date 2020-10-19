@@ -5,7 +5,7 @@ const Results = () => {
 
   return(
     <section className='results-section'>
-
+      
     </section>
   )
 

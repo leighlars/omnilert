@@ -9,10 +9,15 @@ const App = () => {
   const [results, setResults] = useState([])
   const [error, setError] = useState('')
 
+  const getResults = async (query) => {
+    const returnedResults = await getGifs(query)
+    setResults(returnedResults)
+  }
+
   return (
     <div className="App">
-      <Header />
-      <Results/>
+      <Header getResults={getResults}/>
+      <Results results={results}/>
     </div>
   );
 }

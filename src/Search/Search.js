@@ -1,11 +1,17 @@
 import React, {useState} from 'react'
 import './Search.scss'
 
-const Search = () => {
+const Search = ({getResults}) => {
   const [query, setQuery] = useState('')
 
   const clearInput = () => {
     setQuery('')
+  }
+
+  const searchGifs = (e) => {
+    e.preventDefault()
+    getResults(query)
+    clearInput()
   }
 
   return(
@@ -14,12 +20,13 @@ const Search = () => {
         className='search-input'
         aria-label='search-input'
         value={query}
+        type='text'
         onChange={(e) => setQuery(e.target.value)}
         placeholder='Search gifs'
       />
       <button 
         className='search-button'
-        
+        onClick={(e) => {searchGifs(e)}}
         >
           Get Giphin'
         </button>
