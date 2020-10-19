@@ -1,7 +1,12 @@
 @import '../styles/variables';
 
 header {
-  @include headerFont(3em);
-  justify-content: center;
+  @include rowDisplay();
+  justify-content: space-between;
   align-items: center;
+  padding: 1%;
+  width: 100%;
+  h1 {
+    @include headerFont(3.5em)
+  }
 }

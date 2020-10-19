@@ -1,8 +1,20 @@
 @import '../styles/variables';
 
-form {
-  @include generalDisplay();
+.search-form {
+  @include rowDisplay();
   justify-content: center;
-  margin: 0 auto;
-  width: 30vw;
+  margin-right: 3em;
+  input {
+    @include textFont(1.5em);
+    color: $richBlack;
+    border: none;
+    border-radius: 6px 0px 0px 6px;
+    ::placeholder {
+      color: $richBlack;
+    }
+  }
+  button {
+    @include button;
+    border-radius: 0px 6px 6px 0px;
+  }
 }
