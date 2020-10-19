@@ -1,0 +1,12 @@
+
+$richBlack: #020402;
+
+@mixin generalDisplay() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin rowDisplay() {
+  display: flex;
+  flex-direction: column;
+}
