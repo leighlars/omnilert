@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
+$archivoBlackFont: 'Archivo Black', sans-serif;
 $richBlack: #020402;
 
 @mixin generalDisplay() {
@@ -9,4 +11,10 @@ $richBlack: #020402;
 @mixin rowDisplay() {
   display: flex;
   flex-direction: column;
+}
+
+@mixin headerFont($fontSize) {
+  font-family: $archivoBlackFont;
+  color :white;
+  font-size: $fontSize;
 }
