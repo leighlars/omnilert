@@ -2,10 +2,9 @@ import React, {useState} from 'react';
 import './App.scss';
 import Header from '../Header/Header'
 import Results from '../Results/Results';
-import {getGifs} from '../API/API'
+import {getGifs} from '../../data/API'
 
 const App = () => {
-  const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [error, setError] = useState('')
 
