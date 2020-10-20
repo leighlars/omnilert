@@ -5,7 +5,7 @@ const apiURL = 'http://api.giphy.com/v1/gifs/search'
 
 export const getGifs = async (query) => {
   try {
-    const response = await fetch(`${apiURL}?q=${query}&api_key=${apiKey}&limit=10`)
+    const response = await fetch(`${apiURL}?q=${query}&api_key=${apiKey}&limit=20`)
     const data = response.json()
     return data 
   } catch(err) {

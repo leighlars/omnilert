@@ -11,6 +11,8 @@
   span {
     @include rowDisplay();
     position: fixed;
+    background: $richBlack;
+    width: 100%;
 
     h2 {
       @include headerFont(2em);
