@@ -10,7 +10,11 @@ const App = () => {
 
   const getResults = async (query) => {
     const returnedResults = await getGifs(query)
-    setResults(returnedResults)
+    if (returnedResults.meta.status === 200 || returnedResults.meta.msg === 'OK') {
+      setResults(returnedResults.data)
+    } else  {
+      setError(returnedResults.meta.msg)
+    }
   }
 
   return (
