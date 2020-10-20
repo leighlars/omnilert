@@ -5,7 +5,6 @@ import  GifCard from '../GifCard/GifCard'
 const Results = ({results, error, query}) => {
 
   const gifResults = results.map(gif => {
-    console.log(gif)
     return <GifCard gif={gif} key={gif.title}/>
   })
 

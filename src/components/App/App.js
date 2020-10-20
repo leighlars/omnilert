@@ -10,6 +10,7 @@ const App = () => {
   const [error, setError] = useState('')
 
   const getResults = async (query) => {
+    setResults([])
     setQuery(query)
     const returnedResults = await getGifs(query)
     if (returnedResults.meta.msg === 'OK') {

@@ -4,14 +4,10 @@ import './Search.scss'
 const Search = ({getResults}) => {
   const [query, setQuery] = useState('')
 
-  const clearInput = () => {
-    setQuery('')
-  }
-
   const searchGifs = (e) => {
     e.preventDefault()
     getResults(query)
-    clearInput()
+    setQuery('')
   }
 
   return(

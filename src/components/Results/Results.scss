@@ -7,9 +7,10 @@
   width: 90%;
   margin: 0 auto;
   margin-top: 8em;
-  
+
   span {
     @include rowDisplay();
+    position: fixed;
 
     h2 {
       @include headerFont(2em);
@@ -22,13 +23,13 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-}
+  }
   
   .gif-list {
     @include rowDisplay();
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2em;
+    margin-top: 3em;
     overflow-y: scroll;
   }
 
