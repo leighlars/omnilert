@@ -10,10 +10,10 @@ const App = () => {
 
   const getResults = async (query) => {
     const returnedResults = await getGifs(query)
-    if (returnedResults.meta.status === 200 || returnedResults.meta.msg === 'OK') {
+    if (returnedResults.meta.msg === 'OK') {
       setResults(returnedResults.data)
     } else  {
-      setError(returnedResults.meta.msg)
+      setError("Crap. Something went wrong. Try again, and I'll send this error to my creator in the meantime.")
     }
   }
 
