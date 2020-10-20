@@ -8,8 +8,10 @@ const App = () => {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const getResults = async (query) => {
+    setLoading(true)
     setResults([])
     setQuery(query)
     const returnedResults = await getGifs(query)
@@ -18,12 +20,13 @@ const App = () => {
     } else  {
       setError("Crap. Something went wrong. Try again, and I'll send this error to my creator in the meantime.")
     }
+    setLoading(false)
   }
 
   return (
     <div className="App">
       <Header getResults={getResults}/>
-      <Results results={results} error={error} query={query}/>
+      <Results results={results} error={error} query={query} loading={loading}/>
     </div>
   );
 }
