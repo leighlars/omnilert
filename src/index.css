@@ -1,5 +1,8 @@
+@import './styles/_variables.scss';
+
 body {
+  background-color: $richBlack;
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 

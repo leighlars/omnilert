@@ -7,6 +7,7 @@ const GifCard = ({gif}) => {
       title={gif.title}
       src={gif.embed_url} 
       alt={gif.title}
+      className='gif'
     />
   )
 
