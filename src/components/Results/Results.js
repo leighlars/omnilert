@@ -11,6 +11,7 @@ const Results = ({results, error, query, loading}) => {
   
   return(
     <section className='results-section'>
+      
       {error && <h2 className="error-text">{error}</h2>}
       {results && results.length === 0 && query && <h2 className='results-text'>
         No search results found for: {query}. <br/> 
@@ -21,7 +22,7 @@ const Results = ({results, error, query, loading}) => {
       <div className='gif-list'>
         {gifResults}
       </div>
-      
+
     </section>
   )
 
