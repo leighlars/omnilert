@@ -3,31 +3,32 @@
 .results-section {
   @include generalDisplay();
   background: $richBlack;
-  margin-top: 8em;
   height: 100vh;
   width: 90%;
   margin: 0 auto;
+  margin-top: 8em;
   
   span {
     @include rowDisplay();
-  }
 
-  h2 {
-    @include headerFont(2em);
-  }
+    h2 {
+      @include headerFont(2em);
+    }
 
-  .query-text {
-    text-transform: uppercase; 
-    margin-left: 8px;
-    background: -webkit-radial-gradient(rgba(18,194,233,1) 10%, rgba(196,113,237,1) 57%, rgba(246,79,89,1) 96%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+    .query-text {
+      text-transform: uppercase; 
+      margin-left: 8px;
+      background: -webkit-radial-gradient(rgba(18,194,233,1) 10%, rgba(196,113,237,1) 57%, rgba(246,79,89,1) 96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+}
   
   .gif-list {
     @include rowDisplay();
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 2em;
     overflow-y: scroll;
   }
 

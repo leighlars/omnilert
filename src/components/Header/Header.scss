@@ -5,6 +5,7 @@ header {
   align-items: center;
   padding: 1%;
   width: 100%;
+  position: fixed;
   .header-text  {
     @include rowDisplay();
   }

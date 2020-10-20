@@ -30,7 +30,7 @@ $richBlack: #020402;
 
 @mixin button {
   background: rgb(18,194,233);
-  background: radial-gradient(circle, rgba(18,194,233,1) 10%, rgba(196,113,237,1) 57%, rgba(246,79,89,1) 96%);
+  background: radial-gradient(circle, rgba(18,194,233,1) 30%, rgba(196,113,237,1) 57%, rgba(246,79,89,1) 96%);
   border-radius: 6px;
   border: none;
   @include textFont(1.25em);
