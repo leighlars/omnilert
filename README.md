@@ -13,6 +13,7 @@
 ### Reflections
 If had more time, 
 - I would have made slideshow with scroll buttons to view gifs individually, with static preview thumbnails below.
+- Used Redux in larger app, but used Hooks for scale. Could have also used Context. 
 - I would have styled each gif to be a tad bigger. Image info can be found in the `Images` object in returned data, but took some syntax finangling and kept getting errors. After 15 minutes, I didn't want to lose time.
 - For the sake of loading, I initially had limit the response to 10 results from the api call, but decided to allow 20 results to be returned. If I had more time, I would fetch all results, then load / render the first 20, then on button click 'More', another set of 20 would render and so forth. This would cut down on initial loading time. 
 - I spent way more time on styling than I wanted to. Kinda couldn't help it. 
